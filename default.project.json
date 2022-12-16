@@ -1,0 +1,69 @@
+{
+	"name": "card_game",
+	"tree": {
+		"$className": "DataModel",
+
+		"ReplicatedFirst": {
+			"$className": "ReplicatedFirst",
+			"$path": "Source/ReplicatedFirst"
+		},
+
+		"ReplicatedStorage": {
+			"$className": "ReplicatedStorage",
+
+			"Packages": {
+				"$className": "Folder",
+				"$path": "Packages"
+			},
+
+			"Client": {
+				"$className": "Folder",
+				"$path": "Source/ReplicatedStorage/Client"
+			},
+
+			"Enums": {
+				"$className": "Folder",
+				"$path": "Source/ReplicatedStorage/Enums"
+			},
+
+			"Modules": {
+				"$className": "Folder",
+				"$path": "Source/ReplicatedStorage/Modules"
+			},
+
+			"Utilities": {
+				"$className": "Folder",
+				"$path": "Source/ReplicatedStorage/Utilities"
+			},
+
+			"Data": {
+				"$className": "Folder",
+				"$path": "Source/ReplicatedStorage/Data"
+			},
+
+			"Libraries": {
+				"$className": "Folder",
+				"$path": "Source/ReplicatedStorage/Libraries"
+			}
+		},
+
+		"ServerScriptService": {
+			"$className": "ServerScriptService",
+			"$path": "Source/ServerScriptService"
+		},
+
+		"StarterPlayer": {
+			"$className": "StarterPlayer",
+
+			"StarterPlayerScripts": {
+				"$className": "StarterPlayerScripts",
+				"$path": "Source/StarterPlayer/StarterPlayerScripts"
+			},
+
+			"StarterCharacterScripts": {
+				"$className": "StarterCharacterScripts",
+				"$path": "Source/StarterPlayer/StarterCharacterScripts"
+			}
+		}
+	}
+}
