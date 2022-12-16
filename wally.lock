@@ -8,7 +8,7 @@ version = "4.0.0"
 dependencies = []
 
 [[package]]
-name = "naxio/testgrounds"
+name = "naxio/card-game"
 version = "0.1.0"
 dependencies = [["Comm", "sleitnick/comm@0.3.1"], ["Component", "sleitnick/component@2.4.6"], ["Input", "sleitnick/input@2.1.1"], ["Knit", "sleitnick/knit@1.4.7"], ["Loader", "sleitnick/loader@2.0.0"], ["Roact", "roblox/roact@1.4.4"], ["Ser", "sleitnick/ser@1.0.5"], ["Signal", "sleitnick/signal@1.2.1"], ["Silo", "sleitnick/silo@0.1.1"], ["TableUtil", "sleitnick/table-util@1.1.5"], ["Timer", "sleitnick/timer@1.1.2"], ["Trove", "sleitnick/trove@0.5.0"]]
 

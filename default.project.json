@@ -44,6 +44,11 @@
 			"Libraries": {
 				"$className": "Folder",
 				"$path": "Source/ReplicatedStorage/Libraries"
+			},
+
+			"Remotes": {
+				"$className": "Folder",
+				"$path": "Source/ReplicatedStorage/Remotes"
 			}
 		},
 

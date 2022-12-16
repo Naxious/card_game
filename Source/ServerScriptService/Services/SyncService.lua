@@ -4,15 +4,26 @@ local RunService = game:GetService("RunService")
 local Knit = require(ReplicatedStorage.Packages.Knit)
 
 local function startTimerHeartbeat(self: any)
-	self.timerHeartbeat = RunService.Heartbeat:Connect(function()
+	local timerCount = 0
+	self.timerHeartbeat = RunService.Heartbeat:Connect(function(deltaTime: number)
 		self.currentTime = os.clock()
 		self.currentTimeString = string.format("%.3f", self.currentTime)
+
+		timerCount += deltaTime
+		if timerCount <= 2 then
+			return
+		end
+
+		timerCount -= 2
+		self.Client.timerSignal:FireAll()
 	end)
 end
 
 local SyncService = Knit.CreateService {
 	Name = "SyncService",
-	Client = {},
+	Client = {
+		timerSignal = Knit.CreateSignal()
+	},
 	currentTime = os.clock(),
 	currentTimeString = "0"
 }

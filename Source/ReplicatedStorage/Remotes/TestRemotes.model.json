@@ -1,0 +1,14 @@
+{
+    "Name": "TestRemotes",
+    "ClassName": "Folder",
+    "Children":[
+        {
+            "Name": "openBagRemote",
+            "ClassName": "RemoteEvent"
+        },
+        {
+            "Name": "TestRemote1",
+            "ClassName": "RemoteEvent"
+        }
+    ]
+}
