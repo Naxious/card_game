@@ -14,7 +14,7 @@ local MINUTES_IN_SIMULATED_DAY = HOURS_IN_SIMULATED_DAY * 60
 local MINUTES_IN_SIMULATED_HOUR = MINUTES_IN_SIMULATED_DAY / HOURS_IN_DAY
 
 local syncController
-
+local a = 0
 local function startDiurnalHeartbeat(self: any)
 	local updateCheck = 0
 	self._diurnalHeartbeat = RunService.Heartbeat:Connect(function(deltaTime: number)
